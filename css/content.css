@@ -1,0 +1,102 @@
+.content-top {
+    grid-column: 9/29;
+    grid-row: 8/11;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content-bottom {
+    grid-column: 1/29;
+    grid-row: 27/30;
+    color: rgb(62, 71, 105);
+
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+
+    font-size: 18px;
+}
+
+.content-text {
+    grid-column: 6/74;
+    grid-row: 2/12;
+
+    font-family: Garamond;
+    font-size: 22px;
+
+    overflow: auto;
+}
+
+.content-main {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+
+    grid-column: 9/29;
+    grid-row: 11/27;
+
+    overflow-y: auto;
+}
+
+.work {
+    grid-area: 1/1/25/21;
+
+    display: none;
+    grid-template-columns: repeat(36, 1fr);
+    grid-template-rows: repeat(36, 1fr);
+}
+
+.anim {
+    grid-area: 5/1/37/37;
+    position: relative;
+    border: 5px solid red;
+
+    background-image: url("../icons/background-block.png");
+    background-repeat: repeat;
+    box-sizing: border-box;
+}
+
+.send-localstorage-data {
+    margin-left: 8px;
+    border-radius: 5%;
+}
+
+.data-table {
+    border: 1px solid rgb(62, 71, 105);
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th {
+    border: 1px solid rgb(62, 71, 105);
+
+    padding: 8px;
+    text-align: left;
+    text-align: center;
+    background-color: rgb(169, 178, 209);
+}
+
+.data-table td {
+    border: 1px solid rgb(62, 71, 105);
+
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.local-storage-data,
+.server-data {
+    white-space: pre-wrap;
+}
+
+.table-container {
+    grid-area: 1/5/25/17;
+}

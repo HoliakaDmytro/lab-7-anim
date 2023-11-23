@@ -1,0 +1,19 @@
+.header {
+    display: grid;
+    grid-column: 1/37;
+    grid-row: 1/8;
+
+    grid-template-columns: repeat(36, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.header-sign {
+    grid-column: 32/36;
+    grid-row: 4/5;
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
